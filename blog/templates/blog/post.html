@@ -1,0 +1,15 @@
+{% extends "global/base.html" %}
+
+{% block title %}
+    Post {{id_post}} 
+{% endblock title %}
+
+{% block posts %}
+    <div class="card text-bg-dark shadow-lg w-100">
+        <div class="card-header text-white-50 "> {{text_post}} {{id_post}} </div>
+        <div class="card-body ">
+            <h5 class="card-title text-warning fs-1"> {{post_title}} </h5>
+            <p class="card-text fs-5"> {{post_body}} </p>
+        </div>
+    </div>
+{% endblock posts %}

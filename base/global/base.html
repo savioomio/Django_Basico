@@ -1,0 +1,11 @@
+{% include "global/partials/head.html" %}
+
+<title> {% block title %} <!-- base do meu titulo -->  {% endblock title %} </title>
+
+{% include "global/partials/menu.html" %}
+  
+{% block body %} <!-- base do corpo em html --> {% endblock body %}
+
+{% block posts %}{% endblock posts %}
+
+{% include "global/partials/scripts.html" %}

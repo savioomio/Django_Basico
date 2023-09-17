@@ -1,0 +1,17 @@
+{% extends "global/base.html" %}
+
+{% block title %}
+    Posts
+{% endblock title %}
+
+{% block body %}
+
+{% endblock body %}
+
+{% block posts %}
+    <article class="w-100 d-flex flex-wrap justify-content-center align-items-center">
+        {% for post in posts %}
+            {% include "global/partials/postblock.html" %}   
+        {% endfor %}
+    </article>
+{% endblock posts %}

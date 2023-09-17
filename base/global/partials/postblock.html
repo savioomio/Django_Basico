@@ -1,0 +1,7 @@
+<div class="card shadow-lg post action-checkbox m-2 " style="width: 19rem; height: 18rem;">
+    <div class="card-body overflow-hidden ">
+      <h5 class="card-title post__title fs-4"> {{ post.title }} </h5>
+      <p class="card-text post__body fs-5"> {{ post.body }} </p>
+    </div> 
+    <a href=" {% url 'blog:post' post.id %} " class="btn btn-warning shadow m-2"> <strong> Ver post </strong></a>
+</div>
